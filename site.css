@@ -1,0 +1,141 @@
+<style>
+
+@media (max-width: 600px) {
+  .onethird {
+    width: 100%;
+    float: none;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+  .onethird {
+    width: 50%;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+}
+
+@media (min-width: 900px) {
+  .onethird {
+    width: 33%;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+}
+
+nav {
+    background-color: lightgray;
+    text-align: center;
+    padding: 10px 0;
+    transition: background-color 0.3s ease-in-out; 
+    transition: color 0.5s ease-out;
+}
+
+#navbar a {
+    display: inline-block;å
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 42px;
+    margin: 50px 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 32px;
+    margin: 40px 0;
+}
+
+main h3 {
+    text-align: center;
+    font-size: 28px;
+    margin: 30px 0;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+    margin: 20px 0;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    margin: 10px;
+}
+
+main div {
+    text-align: center;
+    margin: 20px 0;
+}
+
+section h5 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+section p {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.onethird {
+float: left;
+width: 33%;
+padding-left: 2em;
+padding-right: 2em;
+transition: all 0.3s ease-in-out;
+transition: color 0.5s ease-out;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input, datalist, textarea {
+  margin-bottom: 0.5em;
+}
+
+@media (min-width: 1024px){
+  header { font-size:120% }
+
+  nav {font-weight: bold;}
+
+  form {
+    display: grid;
+    grid-template-columns: 9em 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1em;
+    max-width: 40em;
+    width: 60%;
+  }
+
+  [type="submit"] {
+    grid-column: 2;
+    width: 9em;
+  }
+
+</style>
